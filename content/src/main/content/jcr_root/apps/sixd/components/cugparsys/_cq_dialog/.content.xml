@@ -32,6 +32,12 @@
 								query="\{&quot;selector&quot;: &quot;group&quot;}"/>
 						</field>
 					</admittedgroups>
+					<admittedgroupsTypeHint
+						jcr:primaryType="nt:unstructured"
+						sling:resourceType="granite/ui/components/foundation/form/hidden"
+						defaultValue="String[]"
+						name="./jcr:content/cq:cugPrincipals@TypeHint"
+						value="String[]"/>
 					<enable
 						jcr:primaryType="nt:unstructured"
 						sling:resourceType="granite/ui/components/foundation/form/hidden"

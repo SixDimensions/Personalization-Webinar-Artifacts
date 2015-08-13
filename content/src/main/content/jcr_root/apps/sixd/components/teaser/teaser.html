@@ -4,9 +4,9 @@
 	Creates a closed-user group container for restricting viewable content.  
  */-->
 <div data-sly-test.author="${wcmmode.edit || wcmmode.design}">
-	<p>Closed User Group Parsys</p>
-	<sly data-sly-resource="${'./par' @ resourceType='foundation/components/parsys'}"></sly>
+	<p>Teaser</p>
+	<sly data-sly-include="/libs/cq/personalization/components/teaser.jsp"></sly>
 </div>
 <sly data-sly-test="${!author}">
-	<sly data-sly-resource="${'./par' @ resourceType='foundation/components/parsys'}"></sly>
+	<sly data-sly-include="/libs/cq/personalization/components/teaser.jsp"></sly>
 </sly>
