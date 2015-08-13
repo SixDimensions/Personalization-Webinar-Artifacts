@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Closed User Group Parsys"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <closedgroups
+            jcr:primaryType="cq:Widget"
+            title="Closed User Groups"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <principals
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Admitted Groups"
+                    name="./cq:cugPrincipals"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="nt:unstructured"
+                        displayField="principal"
+                        filter="groups"
+                        xtype="authselection"/>
+                </principals>
+                <cq_cugEnabled
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="true"
+                    name="./cq:cugEnabled"
+                    value="true"
+                    xtype="hidden" />
+            </items>
+        </closedgroups>
+    </items>
+</jcr:root>

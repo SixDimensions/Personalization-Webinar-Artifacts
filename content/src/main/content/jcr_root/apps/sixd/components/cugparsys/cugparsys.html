@@ -1,0 +1,12 @@
+<!--/* 
+   	Closed-User Group Parsys
+   	
+	Creates a closed-user group container for restricting viewable content.  
+ */-->
+<div data-sly-test.author="${wcmmode.edit || wcmmode.design}" style="padding:10px;">
+	<p>Closed User Group Parsys</p>
+	<sly data-sly-resource="${'./jcr:content/par' @ resourceType='foundation/components/parsys'}"></sly>
+</div>
+<sly data-sly-test="${!author}">
+	<sly data-sly-resource="${'./jcr:content/par' @ resourceType='foundation/components/parsys'}"></sly>
+</sly>
